@@ -1,0 +1,8 @@
+SOURCE: Visible
+TARGET: Infrared
+EXP_NAME: visible2infrared_AdvEnt_CycleGAN
+NUM_WORKERS: 4
+TEST:
+  MODE: single
+  RESTORE_FROM:
+    - ../../pretrained_models/visible2infrared_advent_cyclegan.pth

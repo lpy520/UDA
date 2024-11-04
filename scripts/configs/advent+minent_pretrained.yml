@@ -1,0 +1,18 @@
+SOURCE: Visible
+TARGET: Infrared
+EXP_NAME: visible2infrared_AdvEnt_MinEnt
+NUM_WORKERS: 4
+TEST:
+  MODE: single
+  MODEL:
+    - DeepLabv2
+    - DeepLabv2
+  MULTI_LEVEL:
+    - True
+    - True
+  RESTORE_FROM:
+    - ../../pretrained_models/visible2infrared_advent.pth
+    - ../../pretrained_models/visible2infrared_minent_ER.pth
+  MODEL_WEIGHT:
+    - 0.5
+    - 0.5

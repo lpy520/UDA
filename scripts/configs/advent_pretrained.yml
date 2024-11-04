@@ -1,0 +1,9 @@
+SOURCE: Visible
+TARGET: Infrared
+EXP_NAME: visible2infrared_AdvEnt
+NUM_WORKERS: 4
+TEST:
+  MODE: single
+  RESTORE_FROM:
+#    - ../../pretrained_models/visible2infrared_advent.pth
+    - ../../experiments/snapshots/Visible2Infrared_DeepLabv2_AdvEnt/model_2400.pth

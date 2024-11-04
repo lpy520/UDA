@@ -1,0 +1,10 @@
+SOURCE: Visible
+TARGET: Infrared
+EXP_NAME: visible2infrared_MinEnt
+NUM_WORKERS: 4
+TEST:
+  MODE: single
+  RESTORE_FROM:
+    - ../../pretrained_models/visible2infrared_minent_ER.pth
+#    - ../../pretrained_models/gta2cityscapes_minent.pth
+#    - ../../experiments/snapshots/GTA2Cityscapes_DeepLabv2_MinEnt/model_200.pth
